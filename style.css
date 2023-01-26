@@ -1,0 +1,178 @@
+.navbar{
+    position: relative;
+    z-index: 2;
+}
+.navbar-brand {
+  font-family: "Viga", sans-serif;
+  /* font-size: 32px; */
+}
+/* Jumbotron */
+.jumbotron {
+  background-image: url(Aset/aerial-view-business-team.jpg);
+  background-size: cover;
+  text-align: center;
+  height:640px;
+  position: relative;
+}
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.jumbotron .display-4{
+    color: white;
+    padding-top: 280px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.jumbotron .display-4>span{
+    font-weight: 500;
+}
+/* Info panel */
+.info-panel{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    z-index: 1;
+    padding: 30px;
+}
+.info-panel img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.info-panel>h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.info-panel>p{
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -5px;
+    font-weight: 200;
+}
+/* Working Space */
+.workingspace{
+    margin-top: 120px;
+    text-align: center;
+}
+.h3{
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 45px;
+}
+.h3>span{
+    font-weight: bold;
+    color: crimson;
+}
+.workingspace p{
+    font-size: 18px;
+}
+/* Last */
+.quotes{
+    margin-top: 100px;
+}
+.qt{
+    font-weight: 200;
+    font-style: italic;
+}
+.figure{
+    justify-content: center;
+}
+.capt{
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1c2c5d;
+}
+.quotes figure img{
+    width: 100px;
+    margin-top: 30px;
+}
+.figure p{
+    margin-top: -10px;
+    font-size: 12px;
+}
+/* Utility tombol */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+
+/* Biar responsif di desktop */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); 
+    /* (x offset, y offset, tebal bayangan or blur */
+  }
+  .navbar-brand{
+      font-size: 32px;
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  .nav-link:hover {
+    border-bottom: 3px solid #0b63dc;
+    margin-bottom: -3px;
+    color: white;
+    /* text-decoration: underline solid #0b63dc; */
+  }
+  .jumbotron {
+    margin-top: -75px;
+    height: 740px;
+  }
+  .jumbotron .display-4{
+    color: white;
+    padding-top: 280px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 62px;
+    margin-bottom: 30px;
+}
+.jumbotron .display-4>span{
+    font-weight: 500;
+}
+.workingspace{
+    text-align: left;
+}
+.h3{
+    text-transform: uppercase;
+    font-size: 52px;
+}
+.workingspace p{
+    font-size: 24px;
+    text-align: justify;
+    color: #acacac;
+}
+.quotes{
+    text-align: center;
+    margin-top: 130px;
+}
+.qt{
+    font-size: 30px;
+}
+}
+/* Biar resonsif di hp */
+@media(min-width: 300px){
+    .navbar-brand{
+        font-size: 24;
+    }
+}
